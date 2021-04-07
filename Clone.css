@@ -1,0 +1,506 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    grid-template-rows:0.50fr 0.34fr 0.39fr 4fr ;
+    grid-template-columns: 0.25fr 1fr 0.01fr;
+    grid-template-areas: 
+    "nav nav nav"
+    "slide-left header1 slide-right"
+    "slide-left header2 slide-right"
+    "slide-left main slide-right";
+}
+
+.nav{
+    background-color: white;
+    grid-area: nav;
+    border-bottom: 0.5px solid rgba(197, 197, 197, 0.39);
+}
+
+.nav  .fa-bars{
+    padding-left: 28px;
+    color: grey;
+    font-size: 20px;
+
+}
+
+.nav #question{
+    padding-left:390px;
+}
+
+.nav .profile{
+    border-radius: 100%;
+    margin-left: 23px;
+}
+
+.nav div{
+    margin-left: 90px;
+    background-color: rgba(228, 226, 226, 0.459);
+    height: 50px;
+    width: 720px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: rgb(128, 126, 126);
+}
+
+.nav #img{
+    padding-left: 16px;
+}
+
+.nav .dots{
+    width: 33px;
+}
+
+.nav .fa-search{
+    color: rgb(117, 117, 117);
+    font-size: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.nav .d-flex img{
+padding-left: 538px;
+}
+
+.header1{
+    background-color: white;
+    grid-area: header1;
+    border-bottom: 0.5px solid rgba(197, 197, 197, 0.39);
+}
+
+.header1 .reload, .more{
+    padding-left: 22px;
+    font-size: 13px;
+}
+
+.header1 span img{
+    width: 17px;
+
+}
+
+
+.header1 .text-muted{
+    padding-left: 680px;
+}
+
+.header1 span{
+    padding-left: 12px;
+    font-size: 13px;
+    color: rgba(202, 199, 199, 0.63);
+}
+
+.header1 .fa-angle-left{
+    padding-left: 22px;
+    padding-right:23px;
+    color: rgb(117, 117, 117);
+
+}
+
+.header1 .fa-angle-right{
+    padding-left: 22px;
+    padding-right:22px;
+    color: rgb(117, 117, 117);
+
+}
+
+.header1 .keyboard{
+    font-size: 20px;
+}
+
+.header2{
+    background-color: white;
+    grid-area: header2;
+
+}
+
+.header2 #primary{
+    color: #FF0000;
+    font-size: 14px;
+    font-weight: 500;
+    height: 52px;
+    border-bottom: 3px solid #FF0000;
+    
+}
+
+.header2 .row #primary {
+    padding-top: 15px;
+    padding-right: 0px;
+}
+
+.header2 p{
+    margin: 0;
+}
+
+.header2 .col-10 .row1{
+    padding-top: 5px;
+    color: #757575;
+    font-weight: 500;
+}
+
+.header2 .col-2 {
+    padding: 0;
+}
+
+.header2 .col-2 img{
+    padding-top: 17px;
+    padding-left: 20px !important;
+}
+
+.header2 .col-10 button{
+    width: 50px;
+    border-radius: 2px;
+    font-weight: bold;
+    color: white;
+    padding-left: 4px;
+    background-color:  #0275d8;
+    border: none;
+    height: 17px;
+    font-size: 11px;
+}
+
+.header2 #border{
+    border-bottom: 0.5px solid rgba(197, 197, 197, 0.39);
+}
+
+.header2 .col-10 #green{
+    width: 50px;
+    border-radius: 2px;
+    font-weight: bold;
+    color: white;
+    padding-left: 4px;
+    background-color:  green;
+    border: none;
+    height: 17px;
+    font-size: 11px;
+}
+
+.header2 .col-10 .row2{
+    font-size: 11px;
+    color: rgb(158, 158, 158);
+}
+
+.header2 #primary .inbox{
+    padding-left: 12px;
+    padding-right: 20px;
+}
+
+.slide-left{
+    background-color: white;
+    grid-area: slide-left;
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-template-rows: 1fr 2.1fr 1.5fr 1fr 2.3fr 0.4fr ;
+    grid-template-areas:
+    "compose"
+    "inbox"
+    "meet"
+    "hangout"
+    "findSomeone"
+    "lower";
+}
+
+.slide-left .compose{
+    grid-area: compose;
+    padding-top: 13px;
+    padding-left: 12px;
+    padding-bottom: 10px;
+}
+
+.slide-left .compose span{
+    padding-left: 10px;
+    color: #5a5a5a;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.slide-left .compose .button{
+    width: 140px;
+    height:47px;
+    padding-left: 6px;
+    background-color: white;
+    box-shadow: 1px 0px 1px 0px rgba(114, 114, 114, 0.342);
+    border:1px solid rgba(175, 173, 173, 0.322);
+    border-radius: 30px;
+}
+
+.slide-left .compose img{
+    width:35px;
+    height: 35px;
+    margin-left: -10px;
+}
+
+.slide-left .inbox{
+    grid-area: inbox;
+}
+
+.slide-left .inbox .row .col-12{
+    padding-top: 2px;
+    padding-right: 0;
+    padding-bottom:6px ;
+    padding-left: 38px;
+}
+
+.slide-left .inbox .inbox2{
+    width: 260px;
+    padding-top: 10px;
+    color: #ff0000cc !important;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #ff000017;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.slide-left .inbox .inbox2 #span1{
+    font-size: 13px;
+    padding-left: 90px ;
+}
+
+.slide-left .inbox .sent, .started, .snoozed{
+    color: #474747;
+    font-size: 15px;
+    padding-left: 20px;
+
+}
+
+.slide-left .inbox .draft #span2{
+    font-size: 13px;
+    padding-left: 114px ;
+    color: #474747;
+}
+
+.slide-left .inbox .draft{
+    font-size: 15px;
+    padding-left: 20px;
+    font-weight: bold;
+    color: #474747;
+    border-bottom: 0.5px solid rgba(197, 197, 197, 0.39);
+}
+
+.slide-left .meet{
+    grid-area: meet;
+    background-color: white;
+    padding-left: 26px;
+    border-bottom: 0.5px solid rgba(197, 197, 197, 0.39);
+}
+
+.slide-left .meet h1{
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    padding-bottom: 10px;
+}
+
+.slide-left .meet span{
+    color: #474747;
+    font-size: 15px;
+}
+
+.slide-left .meet .col-12{
+    padding-bottom: 8px;
+}
+
+.slide-left .hangout{
+    grid-area: hangout;
+    background-color: white;
+    padding-left: 26px;
+    border-bottom: 0.5px solid rgba(197, 197, 197, 0.39);
+}
+
+.slide-left .hangout h1{
+    font-size: 14px;
+    padding-top: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.slide-left .hangout #profilee{
+    width: 27px;
+    height: 27px;
+    border-radius: 100%;
+}
+
+.slide-left .hangout span{
+    color: #474747;
+    font-size: 13px;
+}
+
+.slide-left .hangout #arrow{
+    width: 15px;
+    height: 15px;
+}
+
+.slide-left .findSomeone{
+    grid-area: findSomeone;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 0.5px solid rgba(197, 197, 197, 0.39);
+
+}
+
+.slide-left .findSomeone img{
+    padding-top: 20px;
+  width: 70px;
+  height: 110px;
+  padding-bottom: 15px;
+}
+
+.slide-left .findSomeone p{
+    color: rgb(158, 158, 158);
+    margin: 0;
+}
+.slide-left .lower{
+    grid-area: lower;
+    background-color: white;
+    padding-left: 38%;
+}
+
+.slide-left .lower img{
+    width: 21px;
+    height: 21px;
+}
+
+.slide-right{
+    background-color:white;
+    grid-area: slide-right;
+    width: 50px;
+}
+
+.slide-right .row{
+    width: 60px;
+}
+
+.slide-right .col-12{
+    /* width: 50px; */
+    text-align: center;
+    padding: 0;
+}
+
+.slide-right span{
+    margin-left: 15px;
+    color: #6a6a6a;
+}
+
+.slide-right .fa-angle-right{
+    width: 35px;
+    padding-top: 270px;
+}
+
+.slide-right .col-12 img{
+    width: 21px;
+    height: 21px;
+    margin-left: 15px;
+    margin-top: 19px;
+    margin-bottom: 17px;
+}
+
+.main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "mail1"
+    "mail2"
+    "mail3"
+    "mail4"
+    "mail5"
+    "mail6"
+    "mail7"
+    "mail8"
+    "mail9"
+    "mail10"
+    "mail11"
+    "mail12"
+    ;
+    
+}
+
+.main .mail1{
+    background-color: white;
+    grid-area: mail1;
+    border-bottom: 0.5px solid rgba(197, 197, 197, 0.39);
+}
+
+.main #active .col-3{
+    padding-left: 0px;
+}
+
+.main #active #spant{
+    color: gray;
+}
+
+.main #active .col-1{
+    font-size: 13px;
+}
+
+.main #active .col-3 .star{
+    width: 18px;
+    margin-left: 8px;
+    padding-bottom: 3px;
+    margin-right: 10px;
+}
+
+.main #active .row{
+    margin: auto;
+    padding-top: 9px;
+    font-size: 15px;
+}
+
+.main .mail2{
+    background-color: white;
+    border-bottom: 0.5px solid rgba(197, 197, 197, 0.39);
+    grid-area: mail2;
+}
+
+
+.main .mail3{
+    grid-area: mail3;
+    border-bottom: 0.5px solid rgba(197, 197, 197, 0.39);
+}
+
+.main .mail4{
+    grid-area: mail4;
+    border-bottom: 0.5px solid rgba(197, 197, 197, 0.39);
+}
+
+.main .mail5{
+    grid-area: mail5;
+    border-bottom: 0.5px solid rgba(197, 197, 197, 0.39);
+}
+
+.main .mail6{
+    grid-area: mail6;
+    border-bottom: 0.5px solid rgba(197, 197, 197, 0.39);
+}
+
+.main .mail7{
+    grid-area: mail7;
+    border-bottom: 0.5px solid rgba(197, 197, 197, 0.39);
+}
+
+.main .mail8{
+    grid-area: mail8;
+    border-bottom: 0.5px solid rgba(197, 197, 197, 0.39);
+}
+
+.main .mail9{
+    grid-area: mail9;
+    border-bottom: 0.5px solid rgba(197, 197, 197, 0.39);
+}
+
+.main .mail10{
+    grid-area: mail10;
+    border-bottom: 0.5px solid rgba(197, 197, 197, 0.39);
+}
+
+.main .mail11{
+    grid-area: mail11;
+    border-bottom: 0.5px solid rgba(197, 197, 197, 0.39);
+}
+
+.main .mail12{
+    grid-area: mail12;
+    border-bottom: 0.5px solid rgba(197, 197, 197, 0.39);
+}
